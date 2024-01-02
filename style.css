@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    overflow: auto; /* Permita a rolagem da página inteira */
+    min-height: 100vh; /* Garanta que o body ocupe pelo menos a altura da viewport */
+}
+body.centered-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#comentario {
+    width: 100%; /* Defina a largura original desejada */
+    max-width: 100%; /* Certifique-se de que não ultrapasse 100% da largura do contêiner pai */
+}
+
+#comentario.largura-dupla {
+    width: 200%; /* Defina a largura como o dobro da largura original */
+    max-width: 200%; /* Certifique-se de que não ultrapasse 200% da largura do contêiner pai */
+}
+
+.centered-box {
+    max-width: 680px;
+    width: 90%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garanta que a .container ocupe pelo menos a altura da viewport */
+}
+
+.box {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+    border-radius: 8px;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputCliente {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputCliente:focus ~ .labelInput {
+    top: -20px;
+}
+
+#Nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(90, 19, 195));
+}
+
+/* Adicionando Media Query para ajustar em telas menores */
+@media screen and (max-width: 600px) {
+    .box {
+        width: 100%;
+        top: 20%; /* Ajuste a porcentagem conforme necessário */
+    }
+}

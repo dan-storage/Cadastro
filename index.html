@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=100%">
+    <title>Bexp | Financiamentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="centered-body">
+    <div class="box centered-box">
+        <form action="https://api.sheetmonkey.io/form/idrnvrZgdJ1XmLe2LoSPGo" method="post">
+            <fieldset>
+                <legend> <b><h1>Formulário de Cadastro</h1></b></legend>
+                <div class="inputBox">
+                    <input type="text" name="CPF" id="CPF" class="inputCliente" required>
+                    <label for="CPF" class="labelInput"> CPF </label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputCliente" required>
+                    <label for="nome" class="labelInput"> Nome Completo </label> 
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="RG" id="RG" class="inputCliente" required>
+                    <label for="RG" class="labelInput"> Digite seu RG </label><br>
+                <div class="inputBox">
+                    <label for="nascimento"> <b>Data de Nascimento:</b>    
+                    <input type="date" name="nascimento" id="Nascimento" class="inputNascimento" required></label>
+                </div><br>
+                <div class="inputBox">
+                        <input type="text" name="Mae" id="Mae" class="inputCliente" required>
+                        <label for="Mae" class="labelInput">Nome da Mãe </label>
+                </div><br>
+                <div class="inputBox">
+                        <input type="text" name="Pai" id="Pai" class="inputCliente">
+                        <label for="Pai" class="labelInput">Nome do Pai</label>
+                </div><br>
+                <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputCliente" required>
+                        <label for="email" class="labelInput"> E-mail </label>
+                </div>
+                <div class="EstadoCivil-group" required>
+                        <div class="EstadoCivil-input"></div> 
+                        <p>Estado Civil:</p>
+                        <input type="radio" id="Solteiro" name="Estado Civil"> 
+                        <label for="Solteiro"><b>Solteiro(a)</b></label>
+                        <input type="radio" id="Casado" name="Estado Civil"> 
+                        <label for="Casado"><b>Casado(a)</b></label>
+                        <input type="radio" id="Divorciado" name="Estado Civil"> 
+                        <label for="Divorciado"><b>Divorciado(a)</b></label>
+                        <input type="radio" id="Viuvo" name="Estado Civil"> 
+                        <label for="Viuvo"><b>Viúvo(a)</b></label>
+                        <br><input type="radio" id="Outros" name="Estado Civil"> 
+                        <label for="Outros"><b>Outros</b></label> <br><br>
+                <div class="inputBox">
+                        <input type="text" name="nomeConjuge" id="nomeConjuge" class="inputCliente">
+                        <label for="nomeConjuge" class="labelInput">Nome do(a) Conjuge</label>
+                </div><br>
+                <div class="inputBox">
+                        <input id="cpf-do-conjuge" type="text" name="cpf-do-conjuge" class="inputCliente"> 
+                        <label for="cpf-do-conjuge" class="labelInput">Digite o CPF do(a) cônjuge </label><br><br>
+                <div class="inputBox">
+                    <label for="NascimentoConjuge">Nascimento do(a) Cônjuge</label>
+                    <input id="Nascimento" type="date" name="NascimentoConjuge">
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="Endereço" id="Endereço" class="inputCliente"  required>
+                    <label for="Endereço" class="labelInput">Endereço Residencial </label>
+                </div><br>
+                <div class="inputBox">  
+                    <input type="text" name="numero" id="numero" class="inputCliente"  required>
+                    <label for="numero" class="labelInput">Número </label>  
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="Complemento" id="Complemento" class="inputCliente" >
+                    <label for="Complemento" class="labelInput">Complemento </label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="CEP" id="CEP" class="inputCliente" required>
+                    <label for="CEP" class="labelInput">CEP </label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="profissao" id="profissao" class="inputCliente" placeholder="" required>
+                    <label for="profissao" class="labelInput">Informe sua Profissão </label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="empresa" id="empresa" class="inputCliente" placeholder="" required>
+                    <label for="empresa" class="labelInput">Nome da Empresa </label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="CNPJ" id="CNPJ" class="inputCliente" placeholder="">
+                    <label for="CNPJ" class="labelInput">CNPJ (Se Sócio) </label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="number" name="renda" id="renda" step="500" class="inputCliente" placeholder="" required>
+                    <label for="renda" class="labelInput">Renda mensal R$</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="tempo" id="tempo" class="inputCliente" placeholder="">
+                    <label for="tempo" class="labelInput">Tempo de Empresa </label>
+                </div><br>
+                <h3>Observações</h3>
+
+                <form action="/processar-comentario" method="post">
+                    <textarea id="comentario" name="comentario" placeholder="Caso tenha observações, digite aqui..." required></textarea>
+            
+                    <br>               
+                    <br>
+            
+                    <input type="submit" value="Enviar dados" id="submit">        
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    
+</body>
+</html>
